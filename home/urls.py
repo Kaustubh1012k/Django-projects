@@ -25,5 +25,6 @@ urlpatterns = [
     path('Historical.html', views.Historical,name='Historical'),
     path('Entertainment.html', views.Entertainment, name='Entertainment'),
     path('Shopping.html', views.Shopping, name='Shopping'),
-     path('about', views.about,name='about'),
+    path('about', views.about,name='about'),
+    path('List.html', views.List,name='List'),
 ]

@@ -21,3 +21,5 @@ def Shopping (request):
 def about(request):
     return render(request,'about.html')
 
+def List(request):
+    return render(request,'List.html')
