@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+{%block body%}
+<style>
+    body {
+      background-image: url('/static/7.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      background-blend-mode: overlay;
+    }
+</style>
+  
+<body style="background-color:rgb(248, 248, 247)">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-6 my-4">
+                <img src="/static/mgroad.jpg" width="700" height="500" style="border:100; border-color: black;">
+            </div>
+            <div class="col-md-6  my-4">
+            <map name="M G Road"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.5091047347064!2d73.87592237394509!3d18.505882082584776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c048ebc13459%3A0x860458c1c7bf8388!2sMG%20Road%2C%20Pune%2C%20Maharashtra%20411001!5e0!3m2!1sen!2sin!4v1682947660701!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></map>
+        </div>
+
+        </div>
+        <div class="col-md-12">
+        <p style="color:rgb(0, 0, 0);text-align: justify ; font-style: italic;">
+            <h4><b>The core of the Camp is MG Road (Mahatma Gandhi Road); Famously called Main Street.
+
+                Here you can enjoy Street Shopping, Mall Shopping, and Shopping in well-known brand showrooms located on street.
+                
+                In Pune, the Camp market has situated a portion of the well-known showrooms. You will also discover shops selling Kashmir and Jaipur handiworks.
+                
+                
+            </b></h4>
+        </p>
+      </div>
+
+    </div>
+    
+</body>
+</html>
+
+{%endblock body%}
