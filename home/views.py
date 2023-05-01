@@ -23,3 +23,6 @@ def about(request):
 
 def List(request):
     return render(request,'List.html')
+
+def Shinde(request):
+    return render(request,'Shinde Chhatri.html')

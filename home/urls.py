@@ -27,4 +27,5 @@ urlpatterns = [
     path('Shopping.html', views.Shopping, name='Shopping'),
     path('about', views.about,name='about'),
     path('List.html', views.List,name='List'),
+    path('Shinde Chhatri.html', views.Shinde,name='Shinde Chhatri'),
 ]
