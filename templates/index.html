@@ -1,0 +1,91 @@
+{%extends 'base.html'%}
+{%block title%} HOLIDAY HUNT {%endblock title%}
+
+{%block body%}
+
+<style>
+  body {
+    background-image:url(/static/20.jpg);
+    background-color:rgb(163, 224, 248);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+</style>
+<div class="container-fluid">
+  <img src="/static/6.jpg" width="100%" height="400">
+</div>
+<div class="container my-4" style="height: 200" >
+<br><br>
+<h1 color="Black" > <b>पुणे तिथे काय उणे !</b> </h1>
+<br><br>
+<form class="form-inline my-2 my-lg-0">
+  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="text-align: center;" width="100%">
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="align-self: center;">Search</button>
+</form>
+<style>
+  form{
+    position:relative;
+    left:36%;
+  }
+</style>
+<br></br>
+<style>
+  h1{
+    position:relative;
+    left:36%;
+  }
+</style>
+</div>
+
+<div class="container">
+  <div class="col-md-12" >
+    <div class="row">
+      <div class="col-6">
+        <div class="card " style="width:25rem;">
+          <img class="card-img-top " src="/static/1.jpg" width="100%" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Historical Places</h5>
+            <a href="Historical.html" class="btn btn-outline-primary btn-sm">Visit link</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-6">
+        <div class="card " style="width:25rem;">
+          <img class="card-img-top " src="/static/8.jpg" width="100%" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Entertainment</h5>
+            <a href="Entertainment.html" class="btn btn-outline-primary btn-sm">Visit link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <br><br>
+    <div class="row">
+      <div class="col-6">
+        <div class="card " style="width:25rem;">
+          <img class="card-img-top " src="/static/9.jpg" width="100%" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Food</h5>
+            <a href="food.html" class="btn btn-outline-primary btn-sm">Visit link</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-6">
+        <div class="card " style="width:25rem;">
+          <img class="card-img-top " src="/static/10.jpg" width="100%" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Shopping</h5>
+            <a href="Shopping.html" class="btn btn-outline-primary btn-sm">Visit link</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+  </div> 
+</div>
+
+{%endblock body%}
