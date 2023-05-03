@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block title %} HOLIDAY HUNT {% endblock title %}
+
+{% block body %}
+
+<style>
+  .list-group-item-action img {
+    border-radius: 50%;
+  }
+</style>
+
+<div class="container my-4">
+  <br><br>
+  <h1 color="Black"><b>पुणे तिथे काय उणे !</b></h1>
+  <br><br>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="text-align: center;" width="100%">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="align-self: center;">Search</button>
+  </form>
+  <br></br>
+  <style>
+    form{
+      position:relative;
+      left:36%;
+    }
+    h1{
+      position:relative;
+      left:36%;
+    }
+  </style>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="list-group">
+        <h4>
+          <a href="wetnjoy.html" class="list-group-item list-group-item-action" style="color: rgb(10, 9, 9);">
+            <img src="/static/wetnjoy.jpg" width="100" height="100"> &emsp;
+            WetNJoy
+          </a>
+        </h4>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="list-group">
+        <h4>
+          <a href="Entertainment.html" class="list-group-item list-group-item-action" style="color: rgb(10, 9, 9);">
+            <img src="/static/13.jpg" width="100" height="100"> &emsp;
+            Bal Gandharva
+          </a>
+        </h4>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="list-group">
+        <h4>
+          <a href="amanora.html" class="list-group-item list-group-item-action" style="color: rgb(10, 9, 9);">
+            <img src="/static/amanoramall.jpg" width="100" height="100"> &emsp;
+            Amanora Mall
+          </a>
+        </h4>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="list-group">
+        <h4>
+          <a href="Shopping.html" class="list-group-item list-group-item-action" style="color: rgb(10, 9, 9);">
+            <img src="/static/12.jpg" width="100" height="100"> &emsp;
+            Phoneix
+          </a>
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}

@@ -27,7 +27,13 @@ urlpatterns = [
     path('Shopping.html', views.Shopping, name='Shopping'),
     path('about', views.about,name='about'),
     path('List.html', views.List,name='List'),
+    path('List2.html', views.List2,name='List2'),
+    #path('List.html', views.List,name='List'),
+    #path('List.html', views.List,name='List'),
+    #path('List.html', views.List,name='List'),
     path('Shinde Chhatri.html', views.Shinde,name='Shinde Chhatri'),
     path('Raja Dinkar Kelkar Museum.html', views.RajaDinkar,name='Raja Dinkar'),
     path('Parvati.html', views.Parvati,name='Parvati'),
+    path('wetnjoy.html', views.wetnjoy,name='wetnjoy'),
+    path('amanora.html', views.amanora,name='amanora'),
 ]

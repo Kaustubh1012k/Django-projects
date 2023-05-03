@@ -32,3 +32,12 @@ def RajaDinkar(request):
 
 def Parvati(request):
     return render(request,'Parvati.html')
+
+def List2(request):
+    return render(request,'List2.html')
+
+def wetnjoy(request):
+    return render(request,'wetnjoy.html')
+
+def amanora(request):
+    return render(request,'amanora.html')
