@@ -26,3 +26,9 @@ def List(request):
 
 def Shinde(request):
     return render(request,'Shinde Chhatri.html')
+
+def RajaDinkar(request):
+    return render(request,'Raja Dinkar Kelkar Museum.html')
+
+def Parvati(request):
+    return render(request,'Parvati.html')
