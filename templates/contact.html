@@ -2,15 +2,59 @@
 {%block title%} HOLIDAY HUNT {%endblock title%}
 
 {%block body%}
+<head>
 
-<div class="container">
-<div class="col-md-12" >
-    <br><br>
-    <h4>gmail:kaustubhkorpe555@gmail.com</h4>
-<br><br>
-<h3>
-    Contact No.- 9923553740
-</h3>
-</div>
+  <title>Survey Form</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/static/contact.css">
+</head>
+
+<body>
+  <div class="heading">
+    <h1 id="head">
+      Contribution Form
+    </h1>
+    <h2 id="subheading">
+      Form for adding a place
+    </h2>
+  </div>
+  <form>
+    <div id="content1">
+      <label for="Name">Name</label><br><br>
+      <input type="name" name="name" placeholder="Enter Your Name" class="box"> <br><br>
+      <label for="Name">Email</label><br><br>
+      <input type="email" name="email" placeholder="Enter Your Email" class="box"> <br><br>
+      <label for="Name">Contact No.</label><br><br>
+      <input type="Contact" name="more" placeholder="Enter Your Contact Number" class="box"> <br><br>
+      <label>Section of Places</label><br><br>
+      <div id="option1">
+        <select>
+          <option name="Seletc one ">Select Section</option>
+          <option value="Option 1">Historical</option>
+          <option value="Option 2">Shopping</option>
+          <option value="Option 3">Entertainment</option>
+          <option value="Option 4">Food</option>
+          <option value="Option 5">Religious</option>
+          <option value="Option 6">Colleges</option>
+        </select>
+      </div>
+      <br>
+      <label for="Name">Name of Place</label><br><br>
+      <input type="name" name="name" placeholder="Enter Name of Place" class="box"> <br><br>
+      <br>
+      <label for="Name">Address of Place</label><br><br>
+      <input type="address" name="name" placeholder="Enter Address of Place" class="box"> <br><br>
+      <label id="head2">Short information of place</label><br><br>
+      <div id="content2">
+        <textarea cols="100" rows="10" placeholder="Enter your comment here..."></textarea><br><br>
+      </div>
+      <a href="End page.html" type="button"><button><h1>Submit</h1></button></a>
+    </div>
+  </form>
+
+</body>
+
+</html>
 
 {%endblock body%}
