@@ -20,20 +20,33 @@ from home import views
 
 urlpatterns = [
     path('', views.index, name='home'),
-    path('food.html', views.food,name='food'),
-    path('contact.html', views.contact, name='contact'),
-    path('Historical.html', views.Historical,name='Historical'),
-    path('Entertainment.html', views.Entertainment, name='Entertainment'),
-    path('Shopping.html', views.Shopping, name='Shopping'),
-    path('about', views.about,name='about'),
+    
     path('List.html', views.List,name='List'),
-    path('List2.html', views.List2,name='List2'),
-    #path('List.html', views.List,name='List'),
-    #path('List.html', views.List,name='List'),
-    #path('List.html', views.List,name='List'),
+    path('Historical.html', views.Historical,name='Historical'),
     path('Shinde Chhatri.html', views.Shinde,name='Shinde Chhatri'),
     path('Raja Dinkar Kelkar Museum.html', views.RajaDinkar,name='Raja Dinkar'),
     path('Parvati.html', views.Parvati,name='Parvati'),
+    path('Lal_Mahal.html', views.LalMahal,name='LalMahal'),
+    path('Pataleshwar.html', views.Pataleshwar,name='Pataleshwar'),
+    
+    path('List2.html', views.List2,name='List2'),
+    path('ravivarp.html', views.Ravi,name='Ravi'),
+    path('mgroad.html', views.MG,name='MG'),
+    path('tulshibaug.html', views.Tulshibaug,name='Tulshibaug'),
+    path('abc.html', views.ABC,name='ABC'),
+    
+    path('List3.html', views.List3,name='List3'),
     path('wetnjoy.html', views.wetnjoy,name='wetnjoy'),
     path('amanora.html', views.amanora,name='amanora'),
+    path('katrajzoo.html', views.katraj,name='katraj'),
+    path('tramp.html', views.tramp,name='tramp'),
+    
+    
+    path('food.html', views.food,name='food'),
+    path('contact.html', views.contact, name='contact'),
+    
+    path('Entertainment.html', views.Entertainment, name='Entertainment'),
+    path('Shopping.html', views.Shopping, name='Shopping'),
+    path('about', views.about,name='about'),
+      
 ]
