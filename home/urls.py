@@ -41,8 +41,14 @@ urlpatterns = [
     path('katrajzoo.html', views.katraj,name='katraj'),
     path('tramp.html', views.tramp,name='tramp'),
     
-    
+    path('List4.html', views.List4,name='List4'),
     path('food.html', views.food,name='food'),
+    path('Durvankur.html', views.Durvankur,name='Durvankur'),
+    path('Bipin.html', views.Bipin,name='Bipin'),
+    path('Sainath_khanawal.html', views.Sainath,name='Sainath'),
+    path('Sukanta.html', views.Sukanta,name='Sukanta'),
+    path('SP Biryani.html', views.SP,name='SP'),
+    
     path('contact.html', views.contact, name='contact'),
     
     path('Entertainment.html', views.Entertainment, name='Entertainment'),

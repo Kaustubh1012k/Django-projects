@@ -63,9 +63,30 @@ def tramp(request):
     return render(request,'tramp.html')
 
 
+def List4(request):
+    return render(request,'List4.html')
 
 def food(request):
     return render(request,'food.html')
+
+def Durvankur(request):
+    return render(request,'Durvankur.html')
+
+def Bipin(request):
+    return render(request,'Bipin.html')
+
+def Sainath(request):
+    return render(request,'Sainath_khanawal.html')
+
+def Badshahi(request):
+    return render(request,'Badshahi.html')
+
+def Sukanta(request):
+    return render(request,'Sukanta.html')
+
+def SP(request):
+    return render(request,'SP Biryani.html')
+
 
 def contact(request):
     return render(request,'contact.html')
