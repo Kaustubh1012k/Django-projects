@@ -28,4 +28,6 @@ urlpatterns = [
     path('about', views.about,name='about'),
     path('List.html', views.List,name='List'),
     path('Shinde Chhatri.html', views.Shinde,name='Shinde Chhatri'),
+    path('Raja Dinkar Kelkar Museum.html', views.RajaDinkar,name='Raja Dinkar'),
+    path('Parvati.html', views.Parvati,name='Parvati'),
 ]
