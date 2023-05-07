@@ -2,11 +2,12 @@
 {%block title%} HOLIDAY HUNT {%endblock title%}
 
 {%block body%}
+
 <head>
 
   <title>Survey Form</title>
   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="/static/contact.css">
 </head>
 
@@ -19,7 +20,8 @@
       Form for adding a place
     </h2>
   </div>
-  <form>
+  <form method="post" action="/contact.html">
+    {% csrf_token %}
     <div id="content1">
       <label for="Name">Name</label><br><br>
       <input type="name" name="name" placeholder="Enter Your Name" class="box"> <br><br>
@@ -49,11 +51,19 @@
       <div id="content2">
         <textarea cols="100" rows="10" placeholder="Enter your comment here..."></textarea><br><br>
       </div>
-      <a href="End page.html" type="button"><button><h1>Submit</h1></button></a>
+      <a href="End page.html" type="button"><button>
+          <h3 style="color: black;">Submit</h3>
+        </button></a>
     </div>
   </form>
 
 </body>
+<style>
+  button{
+    background-color:transparent;
+    font-weight: 200;
+  }
+</style>
 
 </html>
 
