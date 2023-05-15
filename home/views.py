@@ -65,6 +65,8 @@ def tramp(request):
     return render(request,'tramp.html')
 
 
+
+
 def List4(request):
     return render(request,'List4.html')
 
@@ -90,6 +92,34 @@ def SP(request):
     return render(request,'SP Biryani.html')
 
 
+
+
+def List5(request):
+    return render(request,'List5.html')
+
+def Dagdusheth(request):
+    return render(request,'Dagdusheth.html')
+
+def Mahalaxmi(request):
+    return render(request,'Mahalaxmi.html')
+
+def Chintamani(request):
+    return render(request,'Chintamani.html')
+
+def Sainath(request):
+    return render(request,'Sainath_khanawal.html')
+
+def Omkareshwar(request):
+    return render(request,'Omkareshwar.html')
+
+def Balaji(request):
+    return render(request,'Prati_Balaji.html')
+
+def Ram(request):
+    return render(request,'Ram_Mandir.html')
+
+
+
 def contact(request):
     if request.method == "POST":
         name=request.POST.get('name')
@@ -100,11 +130,6 @@ def contact(request):
         contact=Contact(name=name, email=email, place=place,address=address,enquiry=enquiry, date=datetime.today())
         contact.save()
     return render(request,'contact.html')
-
-
-
-def Entertainment(request):
-    return render(request,'Entertainment.html')
 
 def Shopping (request):
      return render(request,'Shopping.html')

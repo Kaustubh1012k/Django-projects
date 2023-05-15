@@ -50,8 +50,14 @@ urlpatterns = [
     path('Sukanta.html', views.Sukanta,name='Sukanta'),
     path('SP Biryani.html', views.SP,name='SP'),
     
-    
-    path('Entertainment.html', views.Entertainment, name='Entertainment'),
+    path('List5.html', views.List5,name='List5'),
+    path('Dagdusheth.html', views.Dagdusheth,name='Dagdusheth'),
+    path('Mahalaxmi.html', views.Mahalaxmi,name='Mahalaxmi'), 
+    path('Chintamani.html', views.Chintamani,name='Chintamani'),
+    path('Omkareshwar.html', views.Omkareshwar,name='Omkareshwar'),
+    path('Prati_Balaji.html', views.Balaji,name='Balaji'),
+    path('Ram_Mandir.html', views.Ram,name='Ram'),
+     
     path('Shopping.html', views.Shopping, name='Shopping'),
     path('about', views.about,name='about'),
       
