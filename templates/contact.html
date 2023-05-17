@@ -1,7 +1,8 @@
-{%extends 'base.html'%}
-{%block title%} HOLIDAY HUNT {%endblock title%}
+{% extends 'base.html' %}
 
-{%block body%}
+{% block title %} HOLIDAY HUNT {% endblock title %}
+
+{% block body %}
 
 <head>
 
@@ -20,7 +21,7 @@
       Form for adding a place
     </h2>
   </div>
-  <form method="post" action="/contact.html">
+  <form method="post" action="{%url 'contact'%}">
     {% csrf_token %}
     <div id="content1">
       <label for="Name">Name</label><br><br>
@@ -35,8 +36,14 @@
       <label for="Name">Address of Place</label><br><br>
       <input type="address" name="name" placeholder="Enter Address of Place" class="box"> <br><br>
       <label id="head2">Short information of place</label><br><br>
-      <div id="content2">
-        <textarea cols="100" rows="10" placeholder="Enter your comment here..."></textarea><br><br>
+      <label for="Name">Enquiry</label><br><br>
+      <textarea name="enquiry" cols="100" rows="10" placeholder="Enter your enquiry here..."></textarea><br><br>
+      <div class="form-group">
+        <input type="checkbox" name="subscribe" value="1" id="subscribe">
+        <label for="subscribe">Subscribe to our newsletter</label>
+      </div>
+      <div class="form-group">
+        <div class="g-recaptcha" data-sitekey="your-site-key"></div>
       </div>
       <a href="End page.html" type="button"><button>
           <h3 style="color: black;">Submit</h3>
@@ -53,5 +60,4 @@
 </style>
 
 </html>
-
-{%endblock body%}
+{%endblock%}
