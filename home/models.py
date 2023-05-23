@@ -8,3 +8,8 @@ class Contact(models.Model):
     address=models.CharField(max_length=250,null=True)
     enquiry=models.TextField(blank=True)
     date=models.DateField()
+
+class SignUp(models.Model):
+    
+    username=models.CharField(max_length=225)
+    email=models.EmailField(max_length=100)
