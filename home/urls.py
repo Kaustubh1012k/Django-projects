@@ -20,10 +20,13 @@ from home import views
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-    path('', views.index, name='home'),
-    path('contact.html', views.contact, name='contact'),
-    path('login.html', views.login, name='login'),
+     path('', views.index, name='home'),
+    path('index.html', views.index, name='index'),
+    path('login.html', views.Login, name='login'),
+
     path('signup.html', views.signup, name='signup'),
+    path('contact.html', views.contact, name='contact'),
+    
     path('List.html', views.List,name='List'),
     path('Historical.html', views.Historical,name='Historical'),
     path('Shinde Chhatri.html', views.Shinde,name='Shinde Chhatri'),
@@ -59,8 +62,14 @@ urlpatterns = [
     path('Omkareshwar.html', views.Omkareshwar,name='Omkareshwar'),
     path('Prati_Balaji.html', views.Balaji,name='Balaji'),
     path('Ram_Mandir.html', views.Ram,name='Ram'),
-     
-    path('Shopping.html', views.Shopping, name='Shopping'),
+    
+    path('List6.html', views.List6,name='List6'),
+    path('coep.html', views.COEP,name='COEP'),
+    path('pict.html', views.PICT,name='PICT'),
+    path('aissms.html', views.AISSMS,name='AISSMS'),
+    path('pvg.html', views.PVG,name='PVG'),
+    path('sinhgad.html', views.Sinhgad,name='Sinhgad'),
+    
     path('about', views.about,name='about'),
       
 ]

@@ -1,6 +1,5 @@
 from django.contrib import admin
-from home.models import Contact,SignUp
+from home.models import SignUp
 
 # Register your models here.
-admin.site.register(Contact)
 admin.site.register(SignUp)

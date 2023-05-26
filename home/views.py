@@ -1,57 +1,58 @@
 from django.shortcuts import render,redirect,HttpResponse
+from django.contrib.auth.models import User
 from django.contrib import messages
+from django.contrib.auth import authenticate,login,logout
 from datetime import datetime
-from home.models import Contact
+from home.models import SignUp
 
 def index(request):
     return render(request,'index.html')
 
-def login(request):
+def Login(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
-        user = auth.authenticate(username=username, password=password)
+        
+        user = authenticate(username=username, password=password)
+        
         if user is not None:
-            auth.login(request, user)
-            return redirect('home')
+            login(request, user)
+            return redirect('index.html')
         else:
-            messages.info(request, 'Invalid Username or Password')
+            messages.error(request, 'Invalid Username or Password')
             return redirect('login')
     else:
         return render(request, 'login.html')
 
 
-def logout_user(request):
-    auth.logout(request)
+def Logout_user(request):
+    logout(request)
+    messages.success(request,"Logged Out Successfully")
     return redirect('home')
 
 def signup(request):
-    if request.method == 'POST':
-        first_name = request.POST['first_name']
-        last_name = request.POST['last_name']
-        username = request.POST['username']
-        email = request.POST['email']
-        password = request.POST['password']
-        confirm_password = request.POST['confirm_password']
-        if password==confirm_password:
-            if User.objects.filter(username=username).exists():
-                messages.info(request, 'Username is already taken')
-                return redirect(signup)
-            elif User.objects.filter(email=email).exists():
-                messages.info(request, 'Email is already taken')
-                return redirect(signup)
-            else:
-                user = User.objects.create_user(username=username, password=password, 
-                                        email=email, first_name=first_name, last_name=last_name)
-                user.save()
-                return redirect('login.html')
-        else:
-            messages.info(request, 'Both passwords are not matching')
-            return redirect(signup)
-    else:
-        return render(request, 'signup.html')
+    if request.method == "POST":
+        username=request.POST.get('username')
+        first_name=request.POST.get('first_name')
+        last_name=request.POST.get('last_name')
+        email=request.POST.get('email')
+        password=request.POST.get('password')
+        confirm_password=request.POST.get('confirm_password')
+        myuser=User.objects.create_user(username,email,password)
+        myuser.first_name=first_name
+        myuser.last_name=last_name
+        myuser.save()
+        messages.success(request,"Your account has been successsfully created.")
+        #signup=SignUp(username=username,first_name=first_name,last_name=last_name, email=email,date=datetime.today())
+        #signup.save()
+        return redirect('login')
+    return render(request,'signup.html')
+
     
-    
+def contact(request):
+    return render(request,'contact.html')    
+
+
 def List(request):
     return render(request,'List.html')
 
@@ -161,21 +162,25 @@ def Balaji(request):
 def Ram(request):
     return render(request,'Ram_Mandir.html')
 
+def List6 (request):
+     return render(request,'List6.html')
+ 
+def COEP(request):
+     return render(request,'coep.html') 
 
+def PICT(request):
+     return render(request,'pict.html')
 
-def contact(request):
-    if request.method == "POST":
-        name=request.POST.get('name')
-        email=request.POST.get('email')
-        place=request.POST.get('place')
-        address=request.POST.get('address')
-        enquiry=request.POST.get('enquiry')
-        contact=Contact(name=name, email=email, place=place,address=address,enquiry=enquiry, date=datetime.today())
-        contact.save()
-    return render(request,'contact.html')
+def AISSMS(request):
+     return render(request,'aissms.html')
 
-def Shopping (request):
-     return render(request,'Shopping.html')
+def PVG(request):
+     return render(request,'pvg.html')
+ 
+def Sinhgad(request):
+     return render(request,'sinhagad.html') 
+ 
 
+  
 def about(request):
     return render(request,'about.html')

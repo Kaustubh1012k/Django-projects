@@ -21,7 +21,7 @@
 
   }
  </style>
-	<form method="POST" class="form-horizontal">
+	<form action="signup.html" method="POST" class="form-horizontal">
 		{% csrf_token%}
 		<div class="mx-auto" style="width: 400px;">
 
@@ -58,7 +58,7 @@
 				<input type="password" class="form-control" name="confirm_password" id="confirm_password"
 					placeholder="Confirm Your Password" Required>
 			</div>
-			<button type="submit" class="btn btn-primary">SIGNUP</button>
+			<button type="submit" class="btn btn-primary">SIGNUP</a>
 			<a class="btn btn-dark" href="login.html" role="button">LOGIN</a>
 		</div>
 	</form>

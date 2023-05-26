@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% block title %} HOLIDAY HUNT {% endblock title %}
+
+{% block body %}
+
+<style>
+  .list-group-item-action img {
+    border-radius: 50%;
+  }
+</style>
+
+<div class="container my-4" data-aos="zoom-in">
+  <br><br>
+  <h1 color="Black"><b>पुणे तिथे काय उणे !</b></h1>
+  <br><br>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="text-align: center;" width="100%">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="align-self: center;">Search</button>
+  </form>
+  <br></br>
+  <style>
+    form{
+      position:relative;
+      left:36%;
+    }
+    h1{
+      position:relative;
+      left:36%;
+    }
+  </style>
+</div>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-6" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
+        <div class="list-group">
+          <h4>
+            <a href="coep.html" class="list-group-item list-group-item-action" style="color: rgb(10, 9, 9);">
+              <img src="/static/coep.jpg" width="100" height="100"> &emsp;
+              COEP
+            </a>
+          </h4>
+        </div>
+      </div>
+
+    <div class="col-md-6" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
+      <div class="list-group">
+        <h4>
+          <a href="pict.html" class="list-group-item list-group-item-action" style="color: rgb(10, 9, 9);">
+            <img src="/static/pict.jpeg" width="100" height="100"> &emsp;
+            PICT
+          </a>
+        </h4>
+      </div>
+    </div>
+
+    <div class="col-md-6" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
+      <div class="list-group">
+        <h4>
+          <a href="aissms.html" class="list-group-item list-group-item-action" style="color: rgb(10, 9, 9);">
+            <img src="/static/AISSMS_COE.jpg" width="100" height="100"> &emsp;
+            AISSMS College OF Engineering
+          </a>
+        </h4>
+      </div>
+    </div>
+
+    <div class="col-md-6" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
+        <div class="list-group">
+          <h4>
+            <a href="pvg.html" class="list-group-item list-group-item-action" style="color: rgb(10, 9, 9);">
+              <img src="/static/pvg.jpg" width="100" height="100"> &emsp;
+              PVG's College of Engineering
+            </a>
+          </h4>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
+        <div class="list-group">
+          <h4>
+            <a href="sinhgad.html" class="list-group-item list-group-item-action" style="color: rgb(10, 9, 9);">
+              <img src="/static/sinhgad.jpg" width="100" height="100"> &emsp;
+              Sinhgad College of Engineering
+            </a>
+          </h4>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+   <script>
+      AOS.init();
+    </script>
+{% endblock body %}

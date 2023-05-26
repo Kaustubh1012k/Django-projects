@@ -3,6 +3,19 @@
 
 {%block body%}
 
+
+{% for message in messages %}
+<div class="alert alert.{{meesage.tags}} alert-dismissible fade show" role="alert">
+  <strong>Message:</strong>{{message}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+
+</div>
+
+
+{% endfor %}
+
 <style>
   body {
     background-image:url(/static/BG.jpg);
@@ -133,8 +146,8 @@ data-aos-duration="2000">
         <div class="card " style="width:25rem;border: 200; border-color: rgb(13, 12, 12);">
           <img class="card-img-top " src="/static/College.jpg" width="100%" height="250">
           <div class="card-body">
-            <h5 class="card-title">Colleges</h5>
-            <a href="Shopping.html" class="btn btn-outline-primary btn-sm">Visit link</a>
+            <h5 class="card-title">Engineering Colleges</h5>
+            <a href="List6.html" class="btn btn-outline-primary btn-sm">Visit link</a>
           </div>
         </div>
       </div>
